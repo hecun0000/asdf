@@ -164,7 +164,7 @@ export default {
       text-align: center;
       font-size: 60px;
       margin-top: 50px;
-      border-bottom: 3px solid #999;
+      border-bottom: 1px solid #999;
     }
   }
 }
@@ -177,13 +177,13 @@ export default {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 11;
   background: rgba(255, 255, 255, 0.9);
-  padding: 0 20px;
 
   .header {
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 15px;
+    right: 15px;
     top: 0;
     height: 100%;
     background: #fff;
