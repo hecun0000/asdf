@@ -1,7 +1,7 @@
 <template>
   <div class="banner">
     
-    <swiper :options="swiperOption">
+    <swiper :options="swiperOption" class="w">
         <!-- <div class="parallax-bg" slot="parallax-bg" data-swiper-parallax="-23%"></div> -->
         <swiper-slide v-for="(item,index) in swiperData" :key="index">
           <div class="title" data-swiper-parallax="-100">{{item.title}}</div>
@@ -11,8 +11,8 @@
           </div>
         </swiper-slide>
         <div class="swiper-pagination swiper-pagination-white" slot="pagination"></div>
-        <div class="swiper-button-prev swiper-button-black" slot="button-prev"></div>
-        <div class="swiper-button-next swiper-button-black" slot="button-next"></div>
+        <div class="swiper-button-prev swiper-button-black hidden-xs-only" slot="button-prev"></div>
+        <div class="swiper-button-next swiper-button-black hidden-xs-only" slot="button-next"></div>
       </swiper>
   </div>
 </template>
@@ -57,9 +57,10 @@ export default {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 60px;
-  height: 300px;
-  background-color: transparent !important;
-  justify-content: space-around !important;
+  height: calc( 100vw / 4);
+  min-height: 300px;
+  background-color: transparent ;
+  justify-content: space-around ;
 }
 .swiper-slide .title {
   font-size: 41px;
@@ -72,5 +73,8 @@ export default {
   font-size: 14px;
   max-width: 400px;
   line-height: 1.3;
+}
+.swiper-container{
+    z-index: -1;
 }
 </style>

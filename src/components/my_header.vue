@@ -85,7 +85,8 @@ export default {
   background: rgba(255, 255, 255, 0.8);
   transform: translateY(-3000px);
   transition: all 0.5s linear;
-  z-index: -1;
+  z-index: 9;
+  
   &.active {
     transform: translateY(0);
   }
@@ -178,7 +179,17 @@ export default {
   right: 0;
   background: rgba(255, 255, 255, 0.9);
   padding: 0 20px;
-  z-index: 12;
+
+  .header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #fff;
+    z-index: 10;
+  }
+
 
   .nav {
     display: flex;
