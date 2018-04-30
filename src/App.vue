@@ -15,6 +15,36 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
 }
+html {
+    font-size : 20px;
+}
+@media only screen and (min-width: 401px){
+    html {
+        font-size: 25px !important;
+    }
+}
+@media only screen and (min-width: 428px){
+    html {
+        font-size: 26.75px !important;
+    }
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 30px !important; 
+    }
+}
+@media only screen and (min-width: 569px){
+    html {
+        font-size: 35px !important; 
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 40px !important; 
+    }
+}
+
+
 ::-webkit-scrollbar {
   display: none;
   width: 0;
@@ -27,6 +57,11 @@ html {
   -webkit-tap-highlight-color: transparent;
   /* height: 100%; */
   margin-top: 54px;
+}
+html,body{
+-moz-user-select: none;
+-khtml-user-select: none;
+user-select: none;
 }
 body {
   margin: 0;

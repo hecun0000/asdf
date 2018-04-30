@@ -9,7 +9,7 @@
            </div>
             <ul class="hidden-xs-only">
                 <li v-for="(item,index) in navs" :key="index">
-                    <a href="#" :alt="item.info+'禾寸-hecun-进击的程序员'">{{item.info}}</a>
+                    <router-link to="/index" :alt="item.info+'禾寸-hecun-进击的程序员'">{{item.info}}</router-link>
                 </li>
             </ul>
             <div class="connect">

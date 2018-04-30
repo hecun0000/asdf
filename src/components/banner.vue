@@ -98,19 +98,47 @@ export default {
   .title {
     border: 2px solid #fff;
     display: inline-block;
-    font-size: 16px;
+    font-size: 0.5rem;
     padding: 5px 15px;
     height: 25px;
     line-height: 13px;
     box-sizing: border-box;
 
     &:hover {
+
+      
     }
   }
 
   .subtitle {
-    font-size: 40px;
+    font-size: 1rem;
     margin: 10px 0;
+  }
+}
+
+.banner-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+
+  .info {
+    margin-left: 10vw;
+
+    .title {
+      border: 2px solid #fff;
+      display: inline-block;
+      font-size: 0.5rem;
+      padding: 5px 15px;
+      height: 25px;
+      line-height: 13px;
+      box-sizing: border-box;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      margin: 10px 0;
+    }
   }
 }
 
